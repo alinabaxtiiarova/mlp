@@ -17,7 +17,7 @@ metrics.BinaryAccuracy(name='accuracy'),
 mean_squared_error = losses.squared_hinge
 
 KDDTrain, train_metadata = loadarff("KDDTrain+.arff")
-KDDTest, test_metadata = loadarff("KDDTrain+_20Percent.arff")
+KDDTest, test_metadata = loadarff("KDDTest+.arff")
 training_nparray = np.asarray(KDDTrain.tolist()) 
 testing_nparray = np.asarray(KDDTest.tolist())
 
